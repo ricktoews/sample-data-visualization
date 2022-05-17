@@ -9,6 +9,10 @@ import VictoryLineSample from './components/victory/Line';
 
 import './App.css';
 
+function Main() {
+  return <div style={{textAlign: 'center'}}>For displaying data visualization samples.</div>
+}
+
 function App() {
 
   const navigate = (e: any) => {
@@ -30,6 +34,7 @@ function App() {
       </nav>
 
       <Routes>
+        <Route path="/" element={<Main />} />
         <Route path="/victory/pie" element={<VictoryPieSample />} />
         <Route path="/victory/bar" element={<VictoryBarSample />} />
         <Route path="/victory/line" element={<VictoryLineSample />} />
